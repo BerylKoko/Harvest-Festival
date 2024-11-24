@@ -1,0 +1,236 @@
+/* Wide Screens */
+@media (min-width: 699px) {
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #ffdab3;
+      font-size: large;
+    }
+  
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      background-color: #B7410E;
+      padding: 20px;
+    }
+  
+    h1 {
+      display: flex;
+      align-items: center;
+      font-size: 3rem;
+      padding: 20px;
+      color: beige;
+      margin: auto;
+      text-align: center;
+    }
+  
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  
+    nav ul li a {
+      display: inline-block;
+      padding: 10px 50px;
+      background-color: rgb(242, 220, 147);
+      color: #944e1b;
+      font-size: 18px;
+      text-decoration: none;
+      border: 1px solid rgb(242, 220, 147);
+      border-radius: 5px;
+    }
+  
+    h2 {
+      color: #944e1b;
+      font-size: 30px;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    main {
+      display: flex;
+      flex-direction: row;
+      border: 5px;
+    }
+  
+    section {
+      display: flex;
+      flex-direction: column;
+      background-color: #efd4c9;
+      flex-grow: 1;
+      padding: 10px;
+    }
+  
+    aside {
+      display: flex;
+      flex-direction: column;
+      background-color: #efd4c9;
+      flex-grow: 1;
+      padding: 15px;
+    }
+  
+    .images {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .images img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+  
+    .images2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    footer {
+      align-content: center;
+      background-color: #eee5e1f0;
+      text-align: center;
+      padding: 20px;
+      bottom: 0;
+    }
+  
+    .activity {
+      display: flex;
+      flex-direction: row;
+      background-color: #efd4c9;
+      justify-content: center;
+      align-content: center;
+  
+    }
+  
+    .frame {
+      display: flex;
+      flex-direction: column;
+      border: 5px solid brown;
+      padding: 10px;
+    }
+  
+    .schedules {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      background-color: #efd4c9;
+    }
+  
+    .banner-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  /* Narrow Screens */
+  @media (max-width: 700px) {
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #ffdab3;
+      font-size: large;
+    }
+  
+    header {
+      background-color: #B7410E;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      color: beige;
+    }
+  
+    h2 {
+      color: #944e1b;
+    }
+  
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    nav ul li a {
+      display: block;
+      padding: 10px;
+      background-color: rgb(242, 220, 147);
+      color: #944e1b;
+      font-size: 18px;
+      text-decoration: none;
+      border: 1px solid rgb(242, 220, 147);
+      border-radius: 5px;
+    }
+  
+    .container {
+      max-width: 100%;
+    }
+  
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .activity {
+      display: flex;
+      flex-direction: column;
+      background-color: #efd4c9;
+      justify-content: center;
+      align-content: center;
+      flex-grow: 2;
+    }
+  
+    section,
+    aside {
+      background-color: #efd4c9;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .images,
+    .images2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+  
+    footer {
+      background-color: #eee5e1f0;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .frame {
+      border: none
+    }
+  
+    .banner-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .schedules img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .activity img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
