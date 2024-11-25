@@ -9,18 +9,30 @@
 
 <body>
   <header>
-    <picture class="logo"><!-- Source: Instructor provided content --><img src="../images/apple-harvest-logo.svg" alt="festival logo"> </picture>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="lineup.html">Lineup</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="information.html">Information</a></li>
-        
-      </ul>
-    </nav>
-    <h1>Ithaca Apple Harvest Festival</h1>
+    <nav class="navbar" id="NavBar">
+      <div class="navbar-header">
+        <button class="hamburger" id="hamburgerBtn">
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+        </button>
+
+    </div>
+    <!-- Source: Instructor provided content -->
+      <picture class="logo"><img src="../images/apple-harvest-logo.svg" alt="festival logo"> </picture>
+
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="lineup.html">Lineup</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><button id="exitBtn" class="exit-btn">Close</button></li>
+          </ul>
+
+  </nav>
+
+    <h1> Ithaca Apple Harvest Festival</h1>
   </header>
   <div class="frame">
     <h2>Gallery</h2>
@@ -72,6 +84,9 @@
       <p>&copy; </p>
     </footer>
   </div>
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/modal.js"></script>
+  <script src="scripts/hamburger-menu.js"></script>
 </body>
 
 </html>
