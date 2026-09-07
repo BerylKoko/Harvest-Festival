@@ -1,28 +1,10 @@
-$(document).ready(function() {
-    function toggleNavigation() {
-      if ($(window).width() < 700) {
-        $("#hamburgerBtn").removeClass("hidden");
-        $("#navMenu").addClass("hidden");
-      } else {
-        $("#hamburgerBtn").addClass("hidden");
-        $("#navMenu").removeClass("hidden");
-      }
-    }
-  
-    toggleNavigation();
-  
-    $("#hamburgerBtn").click(function() {
-      $("#navMenu").toggleClass("hidden");
-      $("#hamburgerBtn").toggleClass("hidden");
-    });
-  
-    $("#exitBtn").click(function() {
-      $("#navMenu").addClass("hidden");
-      $("#hamburgerBtn").removeClass("hidden");
-    });
-  
-    $(window).resize(function() {
-      toggleNavigation();
-    });
-  });
-  
+// Preserves the original menu open/close flow, with one shared breakpoint and state.
+const openButton=document.getElementById('hamburgerBtn');
+const menu=document.getElementById('navMenu');
+const closeButton=document.getElementById('exitBtn');
+const narrow=window.matchMedia('(max-width: 760px)');
+function setOpen(open){if(!menu||!openButton)return;menu.classList.toggle('hidden',narrow.matches&&!open);openButton.setAttribute('aria-expanded',String(open));}
+openButton?.addEventListener('click',()=>setOpen(openButton.getAttribute('aria-expanded')!=='true'));
+closeButton?.addEventListener('click',()=>{setOpen(false);openButton.focus();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&narrow.matches){setOpen(false);openButton?.focus();}});
+narrow.addEventListener('change',()=>setOpen(false));setOpen(false);

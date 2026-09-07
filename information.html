@@ -3,16 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A student-designed guide to the Ithaca Apple Harvest Festival. Historical event content.">
   <title>Information - Apple Harvest Festival</title>
 
   <link rel="stylesheet" type="text/css" href="styles/site.css">
 </head>
 
 <body>
+<a class="skip-link" href="#page-content">Skip to content</a>
   <header>
     <nav class="navbar" id="NavBar">
       <div class="navbar-header">
-        <button class="hamburger" id="hamburgerBtn">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">
           <span class="btn-line"></span>
           <span class="btn-line"></span>
           <span class="btn-line"></span>
@@ -28,7 +31,8 @@
         <li><a href="activities.html">Activities</a></li>
         <li><a href="lineup.html">Lineup</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="information.html">Information</a></li>
+        <li><a href="information.html" aria-current="page">Information</a></li>
+        <li><a href="gettingthere.html">Getting Here</a></li>
         <li><button id="exitBtn" class="exit-btn">Close</button></li>
       </ul>
     </nav>
@@ -36,7 +40,8 @@
     <h1>Ithaca Apple Harvest Festival</h1>
   </header>
 
-  <div class="frame">
+  <div class="frame" id="page-content" tabindex="-1">
+<p class="archive-note">Student design project · Historical 2022 event guide · Not the official festival website</p>
     <h2>Information</h2>
     <p>Apple Harvest Festival will host plenty of farmstand fresh apples and produce, delectable apple and seasonal baked goods, a variety of food trucks offering tasty bites, and a craft fair with artisans from around the region. There will also be live music and entertainment, plus a cider trail to enjoy refreshing cider in store and plenty of great apple and apples-inspired products for sale inside shops in and around Downtown.</p>
 
@@ -67,26 +72,9 @@
       </main>
     </div>
 
-    <footer>
-      <div class="contact-info">
-        <h2>Contact Information</h2>
-        <p>Email: info@appleharvestfestival.com</p>
-        <p>Phone: +1 (555) 123-4567</p>
-        <p>Address: 123 Apple Street, Ithaca, NY, 14850</p>
-      </div>
-      <div class="social-media">
-        <h2>Follow Us</h2>
-        <ul>
-          <li>Facebook: applefestofficial</li>
-          <li>Twitter: applefest2022</li>
-          <li>Instagram: applefestivities</li>
-        </ul>
-      </div>
-      <p>&copy; </p>
-    </footer>
+    <footer><p class="footer-brand">A little autumn. A lot to explore.</p><p>Student interface design by Beryl Koko. Instructor-provided content and images are credited in the source.</p><p>This archived guide is a portfolio project. Dates, transport details and prices describe historical material.</p></footer>
   </div>
 
-  <script src="scripts/jquery-3.7.1.js"></script>
   <script src="scripts/modal.js"></script>
   <script src="scripts/hamburger-menu.js"></script>
 </body>

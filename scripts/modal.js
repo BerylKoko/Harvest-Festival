@@ -1,13 +1,3 @@
-$(document).ready(function() {
-    $("#modal").addClass("hidden");
-    $("#button-a").click(function() {
-      $("#modal").removeClass("hidden");
-      $("#button-a").addClass("hidden");
-  });
-  
-  $("#button-b").click(function() {
-      $("#modal").addClass("hidden");
-      $("#button-a").removeClass("hidden");
-  });
-  });
-  
+const tips=document.getElementById('modal');
+document.getElementById('button-a')?.addEventListener('click',()=>tips.showModal());
+document.getElementById('button-b')?.addEventListener('click',()=>tips.close());
