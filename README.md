@@ -1,73 +1,7 @@
+# Apple Harvest Festival — rehabilitation
 
-# 🎉 Harvest Festival Website
+A bounded repair of the original student HTML/CSS/JS website. Original event content and instructor-provided images remain credited. The guide describes historical 2022 material and is not an official event site.
 
-A simple and festive website celebrating the **Harvest Festival**, built with HTML, CSS, and JavaScript.
+Run `python -m http.server 8000` in this directory, then open http://localhost:8000. No build or dependencies are needed.
 
-🌐 **Live Demo:** [Harvest Festival on GitHub Pages](https://berylkoko.github.io/Harvest-Festival/)
-
----
-
-## 📂 Project Structure
-
-```
-Harvest-Festival/
-│
-├── index.html          # Main landing page
-├── style.css           # Stylesheet for layout and design
-├── script.js           # JavaScript interactions
-├── images/             # Images used in the site
-└── README.md           # Project documentation
-```
-
----
-
-## ✨ Features
-
-* 🍂 **Responsive Design** – Works on desktop and mobile.
-* 🎨 **Festive Theme** – Warm autumn colors and seasonal imagery.
-* 🖼️ **Gallery Section** – Harvest-themed images.
-* 🌙 **Interactive Elements** – JavaScript for simple animations/effects.
-
----
-
-## 🚀 Getting Started
-
-To run the site locally:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/BerylKoko/Harvest-Festival.git
-   ```
-2. Navigate into the project folder:
-
-   ```bash
-   cd Harvest-Festival
-   ```
-3. Open `index.html` in your browser.
-
----
-
-## 🛠️ Built With
-
-* **HTML5** – Structure
-* **CSS3** – Styling and responsiveness
-* **JavaScript** – Interactivity
-
----
-
-## 💡 Future Improvements
-
-* Add a countdown timer for the next festival.
-* Include a section for event details and schedules.
-* Add background music toggle.
-
----
-
-## 👩‍💻 Author
-
-* **BerylKoko**
-
-  * GitHub: [@BerylKoko](https://github.com/BerylKoko)
-
----
+See docs/BEFORE.md, CHANGELOG.md, ARCHITECTURE.md and INTERVIEW.md. Main remains intact; changes are isolated on portfolio/2027-rehabilitation.
