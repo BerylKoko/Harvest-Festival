@@ -440,3 +440,21 @@
  .hamburger {display:inline-flex!important;flex-direction:column;justify-content:center;min-width:48px;min-height:48px;padding:9px;border:1px solid #fff4de80;border-radius:8px}
  .logo {order:1;margin-left:auto;max-width:100px}
 }
+
+/* Native, script-independent navigation for touch and tablet layouts. */
+.mobile-native-nav { display:none; }
+@media (max-width:1100px) {
+  .navbar { position:relative; }
+  .navbar-header, .hamburger, .navbar > .nav-menu { display:none!important; }
+  .mobile-native-nav { display:block; order:0; position:relative; z-index:200; flex:0 0 auto; }
+  .mobile-native-nav summary { list-style:none; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:5px; width:64px; min-height:64px; padding:10px; border:1px solid #fff4de80; border-radius:10px; color:#fff4de; cursor:pointer; user-select:none; }
+  .mobile-native-nav summary::-webkit-details-marker { display:none; }
+  .native-lines { display:flex; flex-direction:column; gap:5px; }
+  .native-lines i { display:block; width:27px; height:3px; background:#fff4de; border-radius:3px; }
+  .native-label { font:600 11px/1 Arial,sans-serif; }
+  .mobile-native-nav[open] summary { background:#723320; }
+  .native-links { position:absolute; top:calc(100% + 10px); left:0; width:min(310px,calc(100vw - 36px)); padding:10px; background:#723320; border:1px solid #a66b4d; border-radius:12px; box-shadow:0 14px 32px #2d160e66; display:flex; flex-direction:column; max-height:70dvh; overflow:auto; }
+  .native-links a { display:block; padding:13px 15px; color:#fff4de; text-decoration:none; font:600 16px/1.4 Arial,sans-serif; border-radius:6px; }
+  .native-links a:hover,.native-links a:focus-visible { background:#91432c; }
+  .navbar > .logo { order:1; margin-left:auto; }
+}
