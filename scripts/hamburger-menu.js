@@ -2,12 +2,11 @@
 const openButton = document.getElementById('hamburgerBtn');
 const menu = document.getElementById('navMenu');
 const closeButton = document.getElementById('exitBtn');
-const narrow = window.matchMedia('(max-width: 760px)');
+const narrow = window.matchMedia('(max-width: 1100px)');
 function setOpen(open, returnFocus = false) {
   if (!menu || !openButton) return;
   const expanded = Boolean(open && narrow.matches);
   menu.classList.toggle('is-open', expanded);
-  menu.classList.toggle('hidden', !expanded && narrow.matches);
   openButton.setAttribute('aria-expanded', String(expanded));
   openButton.setAttribute('aria-label', expanded ? 'Close navigation' : 'Open navigation');
   if (returnFocus) openButton.focus();
